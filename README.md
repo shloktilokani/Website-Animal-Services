@@ -25,7 +25,7 @@ Technologies & Technoligies used :-
   
   •	Adobe Firefly
 
-<img width="960" alt="image" src="https://github.com/shloktilokani/Website-Animal-Services/assets/151170127/ca171a7d-07a1-48d8-ab62-9482f8bf0e1c">
-<img width="960" alt="image" src="https://github.com/shloktilokani/Website-Animal-Services/assets/151170127/2399493a-b05d-426e-8e9b-17f8e4ab84a7">
-<img width="960" alt="image" src="https://github.com/shloktilokani/Website-Animal-Services/assets/151170127/d5b9da9c-df2a-4ca5-bc46-00c5d385057c">
-<img width="960" alt="image" src="https://github.com/shloktilokani/Website-Animal-Services/assets/151170127/ac6b3dd4-2f99-4dd8-9b91-986477561ba4">
+!(res/1.png)
+!(res/2.png)
+!(res/3.png)
+!(res/4.png)
