@@ -9,3 +9,16 @@ So Basically, it means "Please Visit Us Again".
 Discover a haven for your furry friends! Our meticulously crafted pet care website offers an extensive range of services, from grooming to specialized care like Autoscopy, Wellness Exams, and more. Each aspect is tailored to be your go-to resource.
 Explore detailed descriptions, pricing, and comprehensive package details for informed decisions about your pet's health. From routine check-ups to specialized care, find all you need here.
 Navigate effortlessly through our user-friendly platform. Booking appointments is a breeze, granting easy access to essential services. We also provide guidance on pet healthcare for a healthier, happier pet.
+
+Technologies & Technoligies used :-
+  •	HTML
+  •	CSS
+  •	Javascript
+  •	Python Flask
+  •	MySQL Database
+  •	HTML
+  •	Adobe Firefly
+
+<img width="960" alt="image" src="https://github.com/shloktilokani/Website-Animal-Services/assets/151170127/ca171a7d-07a1-48d8-ab62-9482f8bf0e1c">
+
+  
