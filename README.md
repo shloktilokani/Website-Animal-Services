@@ -12,11 +12,17 @@ Navigate effortlessly through our user-friendly platform. Booking appointments i
 
 Technologies & Technoligies used :-
   •	HTML
+  
   •	CSS
+  
   •	Javascript
+  
   •	Python Flask
+  
   •	MySQL Database
+  
   •	HTML
+  
   •	Adobe Firefly
 
 <img width="960" alt="image" src="https://github.com/shloktilokani/Website-Animal-Services/assets/151170127/ca171a7d-07a1-48d8-ab62-9482f8bf0e1c">
