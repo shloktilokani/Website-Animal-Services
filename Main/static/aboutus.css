@@ -1,0 +1,160 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f9e6;
+}
+
+.navbar
+{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d2f4e2;
+}
+
+.navbar a
+{
+    font-weight: bold;
+    font-size: medium;
+    text-decoration: none;
+    color: #0d1505;
+}
+
+.navbar a:hover
+{
+    color: #31c978;
+    transition: 200ms ease;
+}
+
+
+.heading
+{
+    margin-bottom: 3%;
+    opacity: 1;
+    font-size: 2em;
+    color: black;
+}
+
+.heroimage
+{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.What_we_provide_title
+{
+    display: flex;
+    width: 100%;
+    height: 190px;
+    justify-content: center;
+    align-items: center;
+}
+
+.What_we_provide_title p
+{
+    text-align: justify;
+    font-size: 3em;
+    animation: text-in 2s ease-in;
+}
+
+.aboutus_container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    height: 100vh;
+}
+
+.image_container img
+{
+    display: grid;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: 500ms ease;
+}
+
+.image_container img:hover
+{
+    filter: drop-shadow(-40px -5px #68896c);
+}
+
+.google_maps_container
+{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-self: center;
+    margin-bottom: 5%;
+}
+
+.content_container
+{
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    background-color: #31c978;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 200px;
+    height: 200px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-contact p {
+    margin: 10px 0;
+}
+
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+}

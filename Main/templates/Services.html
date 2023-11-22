@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animal Appointment Form</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='services.css') }}">
+</head>
+<body>
+
+<div class="navigation">
+    <nav class="navbar">
+        <a href="{{url_for('mainpage')}}">Home</a>
+        <a href="{{url_for('services')}}">Services</a>
+        <a href="{{url_for('tip')}}">Tips and Treats</a>
+        <a href="{{url_for('About')}}">About</a>
+    </nav>
+</div>
+
+<div class="text_container">
+    <div class="heading">
+        <h1>Let Us Take Care of Your Fluffy Friend</h1>
+    </div>
+</div>
+
+<div class="What_we_provide_title">
+    <p>What we provide</p>
+</div>
+
+<div class="animal_grid_container">
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1422565096762-bdb997a56a84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+             alt="">
+        <div class="content">
+            <span>Vaccination</span>
+            <span>$60</span>
+        </div>
+    </div>
+
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nfGVufDB8fDB8fHww"
+             alt="">
+        <div class="content">
+            <span>Autoscopy</span>
+            <span>$150</span>
+        </div>
+    </div>
+
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1596492784531-6e6eb5ea9993?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D"
+             alt="">
+        <div class="content">
+            <span>Wellness Exams</span>
+            <span>$80</span>
+        </div>
+    </div>
+
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&q=80&w=1935&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+             alt="">
+        <div class="content">
+            <span>Gromming</span>
+            <span>$120</span>
+        </div>
+    </div>
+
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1422565096762-bdb997a56a84?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+             alt="">
+        <div class="content">
+            <span>Pain Management</span>
+            <span>$100</span>
+        </div>
+    </div>
+
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1541364983171-a8ba01e95cfc?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzR8fGRvZ3xlbnwwfHwwfHx8MA%3D%3D"
+             alt="">
+        <div class="content">
+            <span>Behavioral Consultation</span>
+            <span>$100</span>
+        </div>
+    </div>
+
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1586671267731-da2cf3ceeb80?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nfGVufDB8MXwwfHx8MA%3D%3D"
+             alt="">
+        <div class="content">
+            <span>Dental Care</span>
+            <span>$120</span>
+        </div>
+    </div>
+
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1615751072497-5f5169febe17?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGRvZ3xlbnwwfDF8MHx8fDA%3D"
+             alt="">
+        <div class="content">
+            <span>Opthalmology</span>
+            <span>$100</span>
+        </div>
+    </div>
+
+    <div class="animal_image_container">
+        <img src="https://images.unsplash.com/photo-1588269845464-8993565cac3a?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGRvZ3xlbnwwfDF8MHx8fDA%3D
+             alt="">
+        <div class="content">
+            <span>Nutritional Counseling</span>
+            <span>$80</span>
+        </div>
+    </div>
+</div>
+
+<div class="Form_title">
+    <p>Furry Friend Appointment Request</p>
+</div>
+
+<div class="Form_container">
+
+    <form action="/verify" method="POST">
+
+        <fieldset>
+            <legend>
+                <span class="number">1</span>Personal Details
+            </legend>
+
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <span class="number">2</span>Appointment Details
+            </legend>
+            <br>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="services" value="Grooming"> Grooming</label><br>
+                <label><input type="checkbox" name="services" value="Dental Care"> Dental Care</label><br>
+                <label><input type="checkbox" name="services" value="Vaccination"> Vaccination</label><br>
+                <label><input type="checkbox" name="services" value="Pain Management"> Pain Management</label><br>
+                <label><input type="checkbox" name="services" value="Behavioral Consenting"> Behavioral
+                    Consenting</label><br>
+                <label><input type="checkbox" name="services" value="Full Check Up"> Digital Xray</label><br>
+                <label><input type="checkbox" name="services" value="Full Check Up"> Lab Tests</label><br>
+                <label><input type="checkbox" name="services" value="Full Check Up"> Surgey</label><br>
+                <label><input type="checkbox" name="services" value="Full Check Up"> Nutritional Counseling</label><br>
+            </div>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="slot">Choose a Time Slot:</label>
+            <select id="slot" name="slot">
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00 ">13:00</option>
+                <option value="14:00 PM">14:00</option>
+                <option value="15:00 PM">15:00</option>
+                <option value="16:00 PM">16:00</option>
+                <option value="17:00 PM">17:00</option>
+                <option value="18:00 PM">18:00</option>
+                <option value="19:00 PM">19:00</option>
+                <option value="20:00 PM">20:00</option>
+                <option value="21:00 PM">21:00</option>
+            </select><br>
+
+        </fieldset>
+
+        <!--        <input type="submit" value="Submit"> if error un comment this and comment button -->
+        <button type="submit">Request For Appointment</button>
+    </form>
+</div>
+
+
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="furry-aavjo.png" alt="Pet Service Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="{{url_for('mainpage')}}">Home</a></li>
+                <li><a href="{{url_for('services')}}">Services</a></li>
+                <li><a href="{{url_for('tip')}}">Tips and Treats</a></li>
+                <li><a href="{{url_for('About')}}">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <p>Contact Us:</p>
+            <p>Email: furryaavjo@gmail.com</p>
+            <p>Phone: +91 9033226904</p>
+            <p>Address: Vadodara India</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OTP VERIFY</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='verify.css') }}">
+    
+</head>
+</head>
+<body>
+
+<div class="form_contaniner">
+    <div class="form_box">
+        <form action="/validate" method="post">
+        <p>One time password has been sent to the mail id. Please check </p>
+        Enter OTP: <input type="text" name="otp">
+        <input type="submit" value="Submit">
+        </form>
+    </form>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animal Service Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='alter.css') }}">
+</head>
+<body>
+<div class="form_container">
+    <div class="login-container">
+        <div class="login-box">
+            <h2>Admin Login</h2>
+            <form method="POST" action="/cancel">
+                <div class="input-container">
+                    <label for="a_id">Appointment ID: </label>
+                    <input type="text" id="a_id" name="_id" placeholder="Enter your Appointment ID" required>
+                </div>
+                <div class="input-container">
+                    <label for="password">Email: </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                </div>
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="date" required><br>
+
+                <label for="slot">Choose a Time Slot:</label>
+            <select id="slot" name="slot">
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00 ">13:00</option>
+                <option value="14:00 PM">14:00</option>
+                <option value="15:00 PM">15:00</option>
+                <option value="16:00 PM">16:00</option>
+                <option value="17:00 PM">17:00</option>
+                <option value="18:00 PM">18:00</option>
+                <option value="19:00 PM">19:00</option>
+                <option value="20:00 PM">20:00</option>
+                <option value="21:00 PM">21:00</option>
+            </select><br>
+
+
+                <button type="submit">Request To Alter Appointment</button>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Record</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='delete.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <!-- "Hi, admin" link -->
+    <a href="{{url_for('index')}}">Hi, admin</a>
+    <!-- "Dashboard" link -->
+    <a href="{{url_for('index')}}">Dashboard</a>
+</div>
+
+<div class="container">
+    <h1>Admin Dashboard</h1>
+    <form action="/delete/{{ record[0] }}" method="post">
+        <table>
+            <tr>
+                <td><label for="reason">Reason : </label></td>
+                <td><input type="text" name="reason" required></td>
+            </tr>
+        </table>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

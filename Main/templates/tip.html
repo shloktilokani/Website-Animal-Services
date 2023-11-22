@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='tipandtreate.css')}}">
+    <title>Document</title>
+</head>
+<body>
+<div class="navigation">
+    <nav class="navbar">
+        <a href="{{url_for('mainpage')}}">Home</a>
+        <a href="{{url_for('services')}}">Servies</a>
+        <a href="{{url_for('tip')}}">Tips and Treats</a>
+        <a href="{{url_for('About')}}">About</a>
+    </nav>
+</div>
+
+<div class="text_container">
+    <div class="heading">
+        <h1>Tail-Wagging Tips & Tasty Treats!</h1>
+    </div>
+</div>
+
+<div class="tip_heading">
+    <p>Tips for your good friend</p>
+</div>
+
+<div class="tip_container">
+    <div class="tip_card">
+        <div class="title_image">
+            <img src="https://images.unsplash.com/photo-1588943211346-0908a1fb0b01?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZG9nfGVufDB8MXwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60">
+        </div>
+        <div class="title_heading">
+            <p>What food should dogs get daily?</p>
+        </div>
+        <div class="title_content">
+            <p>
+                It is entirely acceptable to feed your dog a pure kibble diet. 
+                Or you can mix their diet up with some cooked or raw meat, fish, vegetables and rice.
+                All <b>dairy product</b> should be avoided accept curd.
+            </p>
+        </div>
+    </div>
+
+    <div class="tip_card">
+        <div class="title_image">
+            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1924&q=80">
+        </div>
+        <div class="title_heading">
+            <p>Effective ways to manage anxiety</p>
+        </div>
+        <div class="title_content">
+            <p>
+                Physical activities like walking or playing fetch help both you and your dog release tension. 
+                It is also good to provide your dog with a safe place in the home where he can escape anxious situations.
+            </p>
+        </div>
+    </div>
+
+    <div class="tip_card">
+        <div class="title_image">
+            <img src="https://images.unsplash.com/photo-1560743641-3914f2c45636?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGRvZ3xlbnwwfDF8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60">
+        </div>
+        <div class="title_heading">
+            <p>Right Exercise routine</p>
+        </div>
+        <div class="title_content">
+            <p>
+                A general rule of thumb is that dogs should get between 30 minutes and 2 hours of exercise every day. 
+                Larger breed dogs, like retrievers, collies, and shepherds will need the most exercise; while smaller and toy breed dogs, 
+                like terriers and Maltese, don't require as much daily physical activity.
+            </p>
+        </div>
+    </div>
+
+    <div class="tip_card">
+        <div class="title_image">
+            <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&q=80&w=1964&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="title_heading">
+            <p>Signs of Aging in dogs</p>
+        </div>
+        <div class="title_content">
+            <p>
+                Slowing down or difficulty getting around: An older dog may have trouble with stairs, jumping into the car, or just getting up after a nap.
+                While we all slow down as we age, your dog's mobility issues could be caused by canine arthritis or another degenerative disease.
+            </p>
+        </div>
+    </div>
+
+    <div class="tip_card">
+        <div class="title_image">
+            <img src="https://images.unsplash.com/photo-1575859431774-2e57ed632664?auto=format&fit=crop&q=80&w=1887&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+        </div>
+        <div class="title_heading">
+            <p>Healthy Skin Routine</p>
+        </div>
+        <div class="title_content">
+            <p>
+                Brushing your dog's coat frequently helps to avoid matted fur and removes 'dead hairs' and potential foreign body. 
+                It's a good opportunity to check for bites, redness or abnormal skin colouration, holes, and infections
+            </p>
+        </div>
+    </div>
+
+    <div class="tip_card">
+        <div class="title_image">
+            <img src="https://media.istockphoto.com/id/1398810303/photo/happy-dog-of-welsh-corgi-pembroke-breed-among-fallen-leaves-in-autumn.jpg?s=1024x1024&w=is&k=20&c=cQKNaCG7NYgHdEbrtz1L4NipMtgqHAu6mQYvKI3G80c=">
+        </div>
+        <div class="title_heading">
+            <p>Preventing fleas and heartworm</p>
+        </div>
+        <div class="title_content">
+            <p>
+                One of the most effective ways to do this is by using a sentinel. 
+                This medication not only prevents the development of heartworms in dogs but also controls flea infestations. 
+                Sentinel is available in easy-to-administer tablet form and can be given to your dog once a month.
+            </p>
+        </div>
+    </div>
+
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-logo">
+            <img src="furry-aavjo.png" alt="Pet Service Logo">
+        </div>
+        <div class="footer-links">
+            <ul>
+                <li><a href="{{url_for('mainpage')}}">Home</a></li>
+                <li><a href="{{url_for('services')}}">Services</a></li>
+                <li><a href="{{url_for('tip')}}">Tips and Treats</a></li>
+                <li><a href="{{url_for('About')}}">About</a></li>
+            </ul>
+        </div>
+        <div class="footer-contact">
+            <p>Contact Us:</p>
+            <p>Email: fuuryaavjo@gmail.com</p>
+            <p>Phone: +91 9033226904</p>
+            <p>Address: Vadodara India</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

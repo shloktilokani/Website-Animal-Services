@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Insert Record</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='insert.css') }}">
+</head>
+<body>
+
+<div class="navbar">
+    <!-- "Hi, admin" link -->
+    <a href="#">Hi, admin</a>
+    <!-- "Dashboard" link -->
+    <a href="#">Dashboard</a>
+    <!-- "Log out" button -->
+    <a href="#" class="logout-button">Log out</a>
+</div>
+
+<div class="container">
+    <h1>Admin Dashboard</h1>
+    <form action="/insert" method="POST">
+        <fieldset>
+            <legend>
+                <span class="number">1</span>Personal Details
+            </legend>
+
+            <label for="fullname">Name:</label>
+            <input type="text" id="fullname" name="fullname" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <span class="number">2</span>Appointment Details
+            </legend>
+            <br>
+
+            <div class="checkbox-group">
+                <label><input type="checkbox" name="services" value="Grooming"> Grooming</label><br>
+                <label><input type="checkbox" name="services" value="Dental Care"> Dental Care</label><br>
+                <label><input type="checkbox" name="services" value="Vaccination"> Vaccination</label><br>
+                <label><input type="checkbox" name="services" value="Pain Management"> Pain Management</label><br>
+                <label><input type="checkbox" name="services" value="Behavioral Consenting"> Behavioral
+                    Consenting</label><br>
+                <label><input type="checkbox" name="services" value="Full Check Up"> Digital Xray</label><br>
+                <label><input type="checkbox" name="services" value="Full Check Up"> Lab Tests</label><br>
+                <label><input type="checkbox" name="services" value="Full Check Up"> Surgey</label><br>
+                <label><input type="checkbox" name="services" value="Full Check Up"> Nutritional Counseling</label><br>
+            </div>
+            <label for="date">Select Date:</label>
+            <input type="date" id="date" name="date" required><br>
+
+            <label for="slot">Choose a Time Slot:</label>
+            <select id="slot" name="slot">
+                <option value="09:00">09:00</option>
+                <option value="10:00">10:00</option>
+                <option value="11:00">11:00</option>
+                <option value="12:00">12:00</option>
+                <option value="13:00 ">13:00</option>
+                <option value="14:00 PM">14:00</option>
+                <option value="15:00 PM">15:00</option>
+                <option value="16:00 PM">16:00</option>
+                <option value="17:00 PM">17:00</option>
+                <option value="18:00 PM">18:00</option>
+                <option value="19:00 PM">19:00</option>
+                <option value="20:00 PM">20:00</option>
+                <option value="21:00 PM">21:00</option>
+            </select><br>
+
+        </fieldset>
+
+        <!--        <input type="submit" value="Submit"> if error un comment this and comment button -->
+        <button type="submit">Add Appointment</button>
+    </form>
+</div>
+</body>
+</html>
